@@ -13,9 +13,12 @@
 </head>
 <body class="bg-[#fafaf9] text-slate-900">
 
+<div class="bg-stone-800 text-white text-[10px] uppercase tracking-[0.2em] py-2 text-center">
+    Designer Collections • Exquisite Patient Care • Family Owned in Woodstock
+</div>
     <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-stone-200">
         <div class="container mx-auto px-8 py-5 flex justify-between items-center">
-            <h1 class="text-2xl font-bold tracking-widest uppercase text-stone-800">Couture <span class="font-light text-stone-500 text-lg italic lowercase">Optique</span></h1>
+            <h1 class="text-2xl font-bold tracking-widest uppercase text-stone-800">Couture <span class="italic font-light text-stone-500">Optique</span></h1>
             <div class="hidden lg:flex space-x-10 text-xs uppercase tracking-widest font-semibold text-stone-600">
                 <a href="#collections" class="hover:text-gold-600 transition">Collections</a>
                 <a href="#clinical" class="hover:text-gold-600 transition">Clinical Care</a>
@@ -29,7 +32,7 @@
         <div class="container mx-auto px-8 z-10">
             <div class="max-w-xl">
                 <span class="uppercase tracking-[0.3em] text-xs font-bold text-stone-500 mb-4 block">Woodstock, Georgia</span>
-                <h2 class="text-6xl mb-6 leading-tight">Where Vision Meets <span class="italic">High Fashion.</span></h2>
+                <h2 class="text-6xl mb-6 leading-tight">Luxury Aesthetics And Curated Designer Quality <span class="italic">in the Heart of Woodstock.</span></h2>
                 <p class="text-lg mb-10 text-stone-600 leading-relaxed font-light">Experience the finest independent eyewear and concierge clinical care in the heart of Woodstock.</p>
                 <a href="#collections" class="bg-stone-800 text-white px-10 py-4 inline-block hover:bg-stone-700 transition">Explore the Gallery</a>
             </div>
@@ -50,7 +53,7 @@
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="group cursor-pointer">
                     <div class="aspect-[4/5] bg-stone-100 mb-4 overflow-hidden">
-                        <div class="w-full h-full bg-stone-200 group-hover:scale-105 transition duration-700 flex items-center justify-center text-stone-400 italic">Parisian Chic</div>
+                        <img src="your-image-link.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
                     </div>
                     <h4 class="text-lg font-medium">The Heritage Series</h4>
                     <p class="text-sm text-stone-500 uppercase tracking-wider">Hand-crafted Acetate</p>
