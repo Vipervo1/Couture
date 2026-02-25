@@ -74,9 +74,13 @@
 
     <section id="collections" class="py-24">
         <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h3 class="text-5xl mb-4 text-stone-800 tracking-tight">The <span class="accent-gold italic">Curated</span> Collection</h3>
-                <div class="h-1 w-20 bg-gold mx-auto"></div>
+            <div class="text-center mb-16 flex flex-col items-center">
+                <h3 class="text-5xl mb-2 text-stone-800 tracking-tight">
+                    The <span class="relative inline-block">
+                        <span class="accent-gold italic">Curated</span>
+                        <span class="absolute -bottom-2 left-0 w-full h-1 bg-gold"></span>
+                    </span> Collection
+                </h3>
             </div>
             
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
@@ -98,7 +102,7 @@
 
                 <div class="group cursor-pointer">
                     <div class="aspect-[4/5] bg-stone-200 mb-6 overflow-hidden shadow-lg border-t-4 border-gold relative">
-                        <img src="https://images.unsplash.com/photo-1577744486770-020ab432da67?auto=format&fit=crop&q=80&w=1760" alt="Oakley Performance" class="w-full h-full object-cover group-hover:scale-110 transition duration-700 opacity-90 group-hover:opacity-100">
+                        <img src="https://images.unsplash.com/photo-1589782182703-2aad697860ad?q=80&w=1760" alt="Oakley Performance" class="w-full h-full object-cover group-hover:scale-110 transition duration-700 opacity-90 group-hover:opacity-100">
                     </div>
                     <h4 class="text-2xl mb-1 text-stone-800 tracking-tighter">Oakley Performance</h4>
                     <p class="text-xs accent-gold uppercase tracking-widest font-bold italic">Precision Engineering</p>
@@ -130,13 +134,13 @@
                 </div>
             </div>
             <div class="bg-white/5 p-10 border border-white/10 backdrop-blur-sm shadow-2xl">
-                <h4 class="text-2xl mb-6 accent-gold">Boutique Hours</h4>
+                <h4 class="text-2xl mb-6 accent-gold uppercase tracking-widest">Boutique Hours</h4>
                 <div class="space-y-3 text-stone-300 font-light text-sm">
                     <div class="flex justify-between border-b border-white/10 pb-2"><span>Tuesday — Friday</span> <span>9am — 6pm</span></div>
                     <div class="flex justify-between border-b border-white/10 pb-2"><span>Saturday</span> <span>10am — 4pm</span></div>
-                    <div class="flex justify-between text-stone-500 italic"><span>Sunday — Monday</span> <span>Closed</span></div>
+                    <div class="flex justify-between text-stone-500 italic text-xs pt-2"><span>Sunday — Monday</span> <span>Closed</span></div>
                 </div>
-                <button class="w-full mt-10 bg-gold text-white py-4 font-bold uppercase tracking-widest text-xs hover:bg-white hover:text-stone-900 transition">Get Directions</button>
+                <button onclick="window.location.href='tel:7705551234'" class="w-full mt-10 bg-gold text-white py-4 font-bold uppercase tracking-widest text-xs hover:bg-white hover:text-stone-900 transition">Call to Schedule</button>
             </div>
         </div>
     </section>
