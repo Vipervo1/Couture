@@ -15,11 +15,12 @@
         body { font-family: 'Inter', sans-serif; }
         .accent-gold { color: #b08d57; }
         .bg-gold { background-color: #b08d57; }
+        .border-gold { border-color: #b08d57; }
     </style>
 </head>
 <body class="texture-bg text-slate-900">
 
-    <div class="bg-stone-900 text-white text-[10px] uppercase tracking-[0.3em] py-2.5 text-center font-semibold">
+    <div class="bg-stone-900 text-white text-[10px] uppercase tracking-[0.3em] py-2.5 text-center font-semibold shadow-md">
         Luxury Styles • Accessible Prices • 770-555-1234
     </div>
 
@@ -37,35 +38,48 @@
 
             <div class="hidden lg:flex space-x-10 text-xs uppercase tracking-widest font-semibold text-stone-600">
                 <a href="#collections" class="hover:accent-gold transition">Collections</a>
-                <a href="#clinical" class="hover:accent-gold transition">Clinical Care</a>
+                <a href="#mission" class="hover:accent-gold transition">Our Mission</a>
                 <a href="#visit" class="hover:accent-gold transition">Visit Us</a>
             </div>
 
-            <a href="tel:7705551234" class="border-2 border-gold px-6 py-2 text-xs uppercase tracking-widest font-bold accent-gold hover:bg-gold hover:text-white transition">
+            <a href="tel:7705551234" class="border-2 border-gold px-6 py-2 text-xs uppercase tracking-widest font-bold accent-gold hover:bg-gold hover:text-white transition shadow-sm">
                 Book Exam
             </a>
         </div>
     </nav>
 
-    <header class="relative bg-emerald-950 h-[70vh] flex items-center overflow-hidden">
-        <div class="absolute inset-0 opacity-30 bg-[url('https://images.unsplash.com/photo-1574258495973-f010dfbb5371?q=80&w=2070')] bg-cover bg-center"></div>
-        <div class="container mx-auto px-8 z-10">
+    <header class="relative bg-emerald-950 h-[75vh] flex items-center overflow-hidden">
+        <div class="absolute inset-0 opacity-30 bg-[url('https://images.unsplash.com/photo-1574258495973-f010dfbb5371?q=80&w=2070')] bg-cover bg-center scale-105"></div>
+        <div class="container mx-auto px-8 z-10 text-center lg:text-left">
             <div class="max-w-3xl text-white">
                 <h2 class="text-5xl md:text-7xl mb-6 leading-tight">Luxury Eye Care. <br><span class="italic font-light accent-gold">Accessible Style.</span></h2>
-                <p class="text-xl mb-10 text-stone-300 leading-relaxed font-light max-w-xl">Experience concierge clinical care and hand-picked independent frames curated for the Woodstock community. Designer quality without the luxury markup.</p>
-                <div class="flex flex-col md:flex-row gap-6">
-                    <a href="#collections" class="bg-gold text-white px-10 py-4 font-bold uppercase tracking-widest text-xs hover:bg-stone-800 transition shadow-2xl text-center">Explore Frames</a>
-                    <a href="#clinical" class="border border-white/40 text-white px-10 py-4 font-bold uppercase tracking-widest text-xs hover:bg-white hover:text-emerald-900 transition text-center">Our Services</a>
+                <p class="text-xl mb-10 text-stone-300 leading-relaxed font-light max-w-xl">
+                    Experience <span class="text-white font-medium italic">concierge clinical eye care</span> and curated frames. <span class="accent-gold font-medium">Designer quality without the designer markup.</span>
+                </p>
+                <div class="flex flex-col md:flex-row gap-6 justify-center lg:justify-start font-bold">
+                    <a href="#collections" class="bg-gold text-white px-10 py-4 uppercase tracking-widest text-xs hover:bg-stone-800 transition shadow-2xl">Explore Frames</a>
+                    <a href="#visit" class="border border-white/40 text-white px-10 py-4 uppercase tracking-widest text-xs hover:bg-white hover:text-emerald-900 transition">Contact Us</a>
                 </div>
             </div>
         </div>
     </header>
 
+    <section id="mission" class="py-24 bg-white/40 border-b border-stone-200">
+        <div class="container mx-auto px-8 text-center max-w-4xl">
+            <span class="accent-gold uppercase tracking-[0.4em] text-[10px] font-bold mb-6 block">Our Commitment</span>
+            <h3 class="text-4xl mb-8 text-stone-800 tracking-tight leading-snug">Elegance in Sight.<br><span class="italic">Value in Vision.</span></h3>
+            <p class="text-xl text-stone-600 font-light leading-relaxed">
+                "At Couture Optique, our mission is to redefine the boutique experience. We prove that world-class style and clinical excellence can be both personal and accessible. We are dedicated to providing our Woodstock neighbors with the finest independent eyewear and compassionate care <span class="italic accent-gold">without the designer markup.</span>"
+            </p>
+        </div>
+    </section>
+
     <section id="collections" class="py-24">
         <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
+            <div class="text-center mb-20">
                 <h3 class="text-5xl mb-4 text-stone-800 tracking-tight">The <span class="accent-gold italic">Curated</span> Collection</h3>
-                <div class="h-1 w-20 bg-gold mx-auto"></div>
+                <div class="h-1 w-20 bg-gold mx-auto mb-6"></div>
+                <p class="text-stone-500 font-light text-sm italic uppercase tracking-[0.2em]">Craftsmanship meets clinical precision</p>
             </div>
             
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
@@ -73,36 +87,18 @@
                     <div class="aspect-[4/5] bg-stone-200 mb-6 overflow-hidden shadow-lg border-t-4 border-gold relative">
                         <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?q=80&w=1760" alt="Gucci Styles" class="w-full h-full object-cover group-hover:scale-110 transition duration-700 opacity-90 group-hover:opacity-100">
                     </div>
-                    <h4 class="text-2xl mb-1 text-stone-800 tracking-tighter">Gucci Collection</h4>
-                    <p class="text-xs accent-gold uppercase tracking-widest font-bold italic">Signature Luxury</p>
+                    <h4 class="text-2xl mb-1 text-stone-800 tracking-tighter uppercase">Gucci Collection</h4>
+                    <p class="text-[11px] accent-gold uppercase tracking-widest font-bold italic">Signature Luxury</p>
                 </div>
 
                 <div class="group cursor-pointer">
                     <div class="aspect-[4/5] bg-stone-200 mb-6 overflow-hidden shadow-lg border-t-4 border-gold relative">
                         <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?q=80&w=1760" alt="Heritage Series" class="w-full h-full object-cover group-hover:scale-110 transition duration-700 opacity-90 group-hover:opacity-100">
                     </div>
-                    <h4 class="text-2xl mb-1 text-stone-800 tracking-tighter">Heritage Series</h4>
-                    <p class="text-xs accent-gold uppercase tracking-widest font-bold italic">Hand-crafted Acetate</p>
+                    <h4 class="text-2xl mb-1 text-stone-800 tracking-tighter uppercase">Heritage Series</h4>
+                    <p class="text-[11px] accent-gold uppercase tracking-widest font-bold italic">Hand-crafted Acetate</p>
                 </div>
 
                 <div class="group cursor-pointer">
                     <div class="aspect-[4/5] bg-stone-200 mb-6 overflow-hidden shadow-lg border-t-4 border-gold relative">
-                        <img src="https://images.unsplash.com/photo-1577744486770-020ab432da67?q=80&w=1760" alt="Oakley Performance" class="w-full h-full object-cover group-hover:scale-110 transition duration-700 opacity-90 group-hover:opacity-100">
-                    </div>
-                    <h4 class="text-2xl mb-1 text-stone-800 tracking-tighter">Oakley Performance</h4>
-                    <p class="text-xs accent-gold uppercase tracking-widest font-bold italic">Precision Engineering</p>
-                </div>
-
-                <div class="group cursor-pointer">
-                    <div class="aspect-[4/5] bg-stone-200 mb-6 overflow-hidden shadow-lg border-t-4 border-gold relative">
-                        <img src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?q=80&w=1760" alt="Bespoke Edit" class="w-full h-full object-cover group-hover:scale-110 transition duration-700 opacity-90 group-hover:opacity-100">
-                    </div>
-                    <h4 class="text-2xl mb-1 text-stone-800 tracking-tighter">The Bespoke Edit</h4>
-                    <p class="text-xs accent-gold uppercase tracking-widest font-bold italic">Limited Exclusives</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-</body>
-</html>
+                        <img src="https://images.unsplash.
